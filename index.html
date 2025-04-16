@@ -1,26 +1,44 @@
-<!-- index.html -->
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>ProStaffLab | 무대기술 전문 자격 학습 플랫폼</title>
+  <title>ProStaffLab | 자격 시험 선택</title>
   <style>
     body { font-family: sans-serif; text-align: center; padding: 50px; }
-    button { padding: 10px 30px; font-size: 18px; }
+    button {
+      padding: 14px 40px;
+      font-size: 18px;
+      margin: 10px;
+      border: none;
+      background-color: #333;
+      color: white;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+    button:hover {
+      background-color: #555;
+    }
+    h1 { font-size: 32px; }
+    h2 { font-size: 18px; color: #666; margin-bottom: 40px; }
+    .counter { margin-top: 50px; font-size: 14px; color: #888; }
   </style>
 </head>
 <body>
   <h1>🎭 ProStaffLab</h1>
-  <h2>무대기술 스태프를 위한 자격 기반 학습 플랫폼</h2>
-  <p>기출문제 풀이 + 해설 + 전문 스태프 양성</p>
+  <h2>자격을 갖춘 공연 스태프를 위한 기출문제 풀이 플랫폼</h2>
+  <p>아래에서 시험 과목을 선택하세요</p>
 
-  <!-- 광고 영역 (애드센스 나중에 연결 가능) -->
-  <div id="ad-banner" style="margin: 20px 0;">
-    <!-- 광고 코드 나중에 삽입 -->
-    <p>[여기에 광고가 표시됩니다]</p>
+  <div>
+    <button onclick="location.href='quiz_machinery.html'">📘 무대기계 3급</button><br>
+    <button onclick="location.href='quiz_audio.html'">🎧 무대음향 3급</button><br>
+    <button onclick="location.href='quiz_light.html'">💡 무대조명 3급</button>
   </div>
 
-  <!-- 문제 풀이 화면 이동 -->
-  <a href="quiz.html"><button>문제 풀기 시작</button></a>
+  <!-- 방문자 수 카운터 -->
+  <div class="counter">
+    <p>👥 총 방문자 수</p>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=9956957&style=0025&nbdigits=5&type=page&initCount=0" title="방문자 수" alt="counter" border="0" />
+  </div>
 </body>
 </html>
