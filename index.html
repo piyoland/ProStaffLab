@@ -1,84 +1,60 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creative Stage</title>
-    <style>
-        body {
-            font-family: 'Noto Sans KR', sans-serif;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            padding: 20px;
-            text-align: center;
-        }
-        header h1 {
-            color: #fff;
-            margin: 0;
-            font-size: 2em;
-        }
-        main {
-            padding: 40px 20px;
-            text-align: center;
-        }
-        .blog-section {
-            margin-top: 50px;
-        }
-        .blog-section p {
-            font-size: 20px;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-        .blog-section img {
-            width: 300px;
-            height: auto;
-            border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s;
-            cursor: pointer;
-        }
-        .blog-section img:hover {
-            transform: scale(1.05);
-        }
-        footer {
-            margin-top: 50px;
-            padding: 20px;
-            text-align: center;
-            font-size: 14px;
-            color: #777;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>ProStaffLab | 자격 시험 선택</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; padding: 50px; }
+    button {
+      padding: 14px 40px;
+      font-size: 18px;
+      margin: 10px;
+      border: none;
+      background-color: #333;
+      color: white;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+    button:hover {
+      background-color: #555;
+    }
+    h1 { font-size: 32px; }
+    h2 { font-size: 18px; color: #666; margin-bottom: 40px; }
+    .counter { margin-top: 50px; font-size: 14px; color: #888; }
+    .blog-link {
+      margin-top: 60px;
+    }
+    .blog-link img {
+      width: 200px;
+      margin-top: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
 </head>
-
 <body>
+  <h1>🎭 ProStaffLab</h1>
+  <h2>자격을 갖춘 공연 스태프를 위한 기출문제 풀이 플랫폼</h2>
+  <p>아래에서 시험 과목을 선택하세요</p>
 
-<header>
-    <h1>Creative Stage</h1>
-</header>
+  <div>
+    <button onclick="location.href='quiz_machinery.html'">📘 무대기계 3급</button><br>
+    <button onclick="location.href='quiz_audio.html'">🎧 무대음향 3급</button><br>
+    <button onclick="location.href='quiz_light.html'">💡 무대조명 3급</button>
+  </div>
 
-<main>
-    <h2>Welcome to Creative Stage!</h2>
-    <p>무대 기술, 조명, 음향 전문자료를 공유하는 공간입니다.</p>
+  <!-- 블로그 링크 추가 -->
+  <div class="blog-link">
+    <h3>문의사항은 블로그 댓글로 문의해주세요</h3>
+    <a href="https://creative-stage.tistory.com/" target="_blank">
+      <img src="images_from_pdf/blog_img.png" alt="Creative Stage 블로그 바로가기">
+    </a>
+  </div>
 
-    <!-- ✅ 여기부터 블로그 링크 섹션 -->
-    <div class="blog-section">
-        <p>문의사항은 블로그 댓글로 문의해주세요</p>
-        <a href="https://creative-stage.tistory.com/" target="_blank">
-            <img src="images_from_pdf/blog_img.png" alt="블로그로 이동">
-        </a>
-    </div>
-    <!-- ✅ 여기까지 블로그 링크 섹션 -->
-
-</main>
-
-<footer>
-    © 2024 Creative Stage. All rights reserved.
-</footer>
-
+  <!-- 방문자 수 카운터 -->
+  <div class="counter">
+    <p>👥 총 방문자 수</p>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=9956957&style=0025&nbdigits=5&type=page&initCount=0" title="방문자 수" alt="counter" border="0" />
+  </div>
 </body>
 </html>
-
