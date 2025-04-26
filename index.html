@@ -4,23 +4,48 @@
   <meta charset="UTF-8">
   <title>ProStaffLab | 자격 시험 선택</title>
   <style>
-    body { font-family: sans-serif; text-align: center; padding: 50px; }
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 { font-size: 32px; margin-bottom: 10px; }
+    h2 { font-size: 18px; color: #666; margin-bottom: 30px; }
+    p { margin-bottom: 40px; }
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+    .subject-box {
+      flex: 0 0 30%;
+      min-width: 250px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      background-color: #f9f9f9;
+    }
+    .subject-box h3 {
+      margin-bottom: 15px;
+    }
+    .subject-box p {
+      margin: 10px 0;
+    }
     button {
-      padding: 14px 40px;
-      font-size: 18px;
-      margin: 10px;
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
       border: none;
       background-color: #333;
       color: white;
-      cursor: pointer;
       border-radius: 6px;
+      cursor: pointer;
     }
     button:hover {
       background-color: #555;
     }
-    h1 { font-size: 32px; }
-    h2 { font-size: 18px; color: #666; margin-bottom: 40px; }
-    .counter { margin-top: 50px; font-size: 14px; color: #888; }
     .blog-link {
       margin-top: 60px;
     }
@@ -30,20 +55,75 @@
       border-radius: 8px;
       cursor: pointer;
     }
+    .counter {
+      margin-top: 50px;
+      font-size: 14px;
+      color: #888;
+    }
   </style>
 </head>
+
 <body>
   <h1>🎭 ProStaffLab</h1>
   <h2>자격을 갖춘 공연 스태프를 위한 기출문제 풀이 플랫폼</h2>
-  <p>아래에서 시험 과목을 선택하세요</p>
+  <p>과목과 급수, 연도를 선택하세요</p>
 
-  <div>
-    <button onclick="location.href='quiz_machinery.html'">📘 무대기계 3급</button><br>
-    <button onclick="location.href='quiz_audio.html'">🎧 무대음향 3급</button><br>
-    <button onclick="location.href='quiz_light.html'">💡 무대조명 3급</button>
+  <div class="container">
+
+    <!-- 무대기계 -->
+    <div class="subject-box">
+      <h3>📘 무대기계</h3>
+      <p><strong>3급</strong><br>
+        <button onclick="location.href='quiz_machinery.html'">2024년 26회</button>
+        <button onclick="location.href='quiz_machinery_2023.html'">2023년 25회</button>
+      </p>
+      <p><strong>2급</strong><br>
+        <button onclick="location.href='quiz_machinery_2_2024.html'">2024년 26회</button>
+        <button onclick="location.href='quiz_machinery_2_2023.html'">2023년 25회</button>
+      </p>
+      <p><strong>1급</strong><br>
+        <button onclick="location.href='quiz_machinery_1_2024.html'">2024년 26회</button>
+        <button onclick="location.href='quiz_machinery_1_2023.html'">2023년 25회</button>
+      </p>
+    </div>
+
+    <!-- 무대음향 -->
+    <div class="subject-box">
+      <h3>🎧 무대음향</h3>
+      <p><strong>3급</strong><br>
+        <button onclick="location.href='quiz_audio.html'">2024년 26회</button>
+        <button onclick="location.href='quiz_audio_2023.html'">2023년 25회</button>
+      </p>
+      <p><strong>2급</strong><br>
+        <button onclick="location.href='quiz_audio_2_2024.html'">2024년 26회</button>
+        <button onclick="location.href='quiz_audio_2_2023.html'">2023년 25회</button>
+      </p>
+      <p><strong>1급</strong><br>
+        <button onclick="location.href='quiz_audio_1_2024.html'">2024년 26회</button>
+        <button onclick="location.href='quiz_audio_1_2023.html'">2023년 25회</button>
+      </p>
+    </div>
+
+    <!-- 무대조명 -->
+    <div class="subject-box">
+      <h3>💡 무대조명</h3>
+      <p><strong>3급</strong><br>
+        <button onclick="location.href='quiz_light.html'">2024년 26회</button>
+        <button onclick="location.href='quiz_light_2023.html'">2023년 25회</button>
+      </p>
+      <p><strong>2급</strong><br>
+        <button onclick="location.href='quiz_light_2_2024.html'">2024년 26회</button>
+        <button onclick="location.href='quiz_light_2_2023.html'">2023년 25회</button>
+      </p>
+      <p><strong>1급</strong><br>
+        <button onclick="location.href='quiz_light_1_2024.html'">2024년 26회</button>
+        <button onclick="location.href='quiz_light_1_2023.html'">2023년 25회</button>
+      </p>
+    </div>
+
   </div>
 
-  <!-- 블로그 링크 추가 -->
+  <!-- 블로그 링크 -->
   <div class="blog-link">
     <h3>문의사항은 블로그 댓글로 문의해주세요</h3>
     <a href="https://creative-stage.tistory.com/" target="_blank">
@@ -56,5 +136,6 @@
     <p>👥 총 방문자 수</p>
     <img src="https://hitwebcounter.com/counter/counter.php?page=9956957&style=0025&nbdigits=5&type=page&initCount=0" title="방문자 수" alt="counter" border="0" />
   </div>
+
 </body>
 </html>
