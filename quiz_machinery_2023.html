@@ -1,0 +1,651 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>2023년 25회 무대기계 3급 기출문제</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    button { margin-right: 10px; padding: 10px 20px; }
+    #result { font-weight: bold; margin-top: 20px; }
+    img { max-width: 100%; height: auto; margin: 10px 0; }
+  </style>
+</head>
+<body>
+  <h1>2023년 25회 무대기계 3급 기출문제</h1>
+
+<!-- 홈으로 돌아가는 버튼 -->
+<button onclick="location.href='index.html'" style="margin-bottom:20px; padding:10px 20px; font-size:16px;">🏠 홈으로 돌아가기</button>
+
+  <div>
+    <button onclick="loadSection('common')">공통 과목 (1~60)</button>
+    <button onclick="loadSection('major')">전공 과목 (1~40)</button>
+  </div>
+<div id="question-nav" style="margin: 20px 0;"></div>
+  <div id="quiz"></div>
+  <button onclick="submitAnswer()">정답 확인</button>
+  <button id="nextBtn" onclick="nextQuestion()" style="display:none;">다음 문제</button>
+  <p id="result"></p>
+
+  <script>
+    const questionsCommon = [
+
+{"question": "1. 00문화예술회관 대극장은 950석의 객석과 구동되는 무대 기계 60개를 갖추고 2024년 1월 1일 공연장 등록을 준비 중이다. 2027년 12월 31일까지 00문화예술회관 대극장이 실시해야 하는 무대시설 안전진단을 <보기>에서 모두 고른 것은?<br><img src=\"images_from_pdf/2023_1.jpg\" width=\"400\">", 
+"choices": ["① ㉠, ㉢, ㉣, ㉤", "② ㉠, ㉡, ㉢, ㉤", "③ ㉠, ㉡, ㉢, ㉣", "④ ㉠, ㉡, ㉣, ㉤"], 
+"answer": 1, 
+"explanation": ""}, 
+
+{"question": "2. 산업 안전색과 안전표지 규격에 대한 국제 표준은?", 
+"choices": ["① ISO 3864", "② ISO 11014", "③ ISO 31000", "④ ISO 45001"], 
+"answer": 0, 
+"explanation": ""}, 
+
+{"question": "3. 「공연장 안전 및 관련법규」에 따른 상부설비에 대한 설명으로 옳은 것은?", 
+"choices": ["① 매달아서 고정시켜 사용하는 기구", "② 중량물을 하역하기 위해 사용하는 기구", "③ 동력을 이용하여 무대장치를 좌우로 이동시키는 기구", "④ 시설 기구, 세트 등의 반출입을 위하여 이동할 수 있는 기구"], 
+"answer": 0, 
+"explanation": ""},
+
+{"question": "4. 장치봉의 구동 방식 및 구조 등에 관한 설명으로 옳지 않은 것은?", 
+"choices": ["① ‘윈치 방식의 장치봉’은 장치봉에 작용하는 하중을 윈치드럼에서 부담하는 형식의 구동 방식을 말한다.", "② ‘윈치-평형추 방식의 장치봉’은 평형추 전동 방식에서 응용된 방식으로서 기구의 하중을 윈치드럼과 평형추에서 반반씩 부담한다.", "③ ‘수동 평형추 방식의 장치봉’은 장치봉에 적용되는 하중과 평형추의 하중의 비를 같게 하여 인력으로 승강 및 하강을 하는 구조이다.", "④  ‘평형추 방식의 장치봉’은 평형추와 장치봉을 동시에 구동하기 위해 대용량의 구동부가 사용되며, 드럼에 와이어로프가 한 바퀴 이상 감겨 있는 구조이다. "], 
+"answer": 3, 
+"explanation": ""},
+
+{"question": "5. 다음 그림은 하부설비 중 승강무대의 구동 방식 중 하나이다. 이에 대한 올바른 명칭은?<br><img src=\"images_from_pdf/2023_5.jpg\" width=\"400\">", 
+"choices": ["① 스크루잭 방식", "② 팬터그래프 방식", "③ 유압 실린더 방식", "④ 스파이어럴 리프트 방식"], 
+"answer": 0, 
+"explanation": ""},
+
+{"question": "6. 전력회사로부터 공급받는 수전 방식으로 옳지 않은 것은?", 
+"choices": ["①  루프 수전 방식", "② 평행 1회선 수전 방식", "③ 1회선 단독 수전 방식", "④ 본선⦁예비선 수전 방식"], 
+"answer": 1, 
+"explanation": ""},
+
+{"question": "7. 전위상승, 고전압의 침입 등에 의한 감전 및 화재를 방지하고 그 밖에 사람에 위해를 주거나 물건에 손상을 줄 우려가 없도록 조치하는 설비는?", 
+"choices": ["① 저압설비", "② 절전설비", "③ 전열설비", "④ 접지설비"], 
+"answer": 3, 
+"explanation": ""},
+
+{"question": "8. 전선의 접속법에 대한 설명으로 옳지 않은 것은?", 
+"choices": ["① 접속 기구에는 슬리브, 와이어커넥터 등이 있다.", "② 접속 부분은 기타 기구를 사용하거나 납땜을 해야 한다.", "③ 접속 부분의 전기저항 증가를 최대화하는 접속법을 선택한다.", "④ 인장하중으로 표시한 전선의 세기를 20% 이상 감소시키면 안 된다."], 
+"answer": 2, 
+"explanation": ""},
+
+{"question": "9. 「공연장 안전 및 관련법규」에서 설명한 기계의 안전조건 중 와이어로프 안전과 관련한 <보 기> 내용 중 빈칸에 들어갈 내용으로 옳은 것은?<br><img src=\"images_from_pdf/2023_9.jpg\" width=\"400\">", 
+"choices": ["① ", "② ", "③ ", "④ "], 
+"answer": 1, 
+"explanation": ""},
+
+{"question": "10. 「공연장 안전 및 관련법규」에서 동력식 호이스트에 대한 설명으로 옳지 않은 것은?<br><img src=\"images_from_pdf/2023_10.jpg\" width=\"400\">", 
+"choices": ["① 안전장치로 리미트스위치를 부착하여야 한다.", "② 버튼식 조종판에 연결하는 전원은 150 V 이하로 사용한다.", "③ 묶음용 행거 체인의 안전계수는 4 이상으로 하여 사용한다.", "④ 조작 스위치는 상하향 식별이 용이하게 화살표로 방향을 표시한다."], 
+"answer": 2, 
+"explanation": ""},
+
+{"question": "11. 무정전 전원장치(UPS)에 사용되고 있는 컨버터의 주된 사용 목적은?", 
+"choices": ["① 교류를 직류로 변화시키기 위해", "② 교류의 주파수를 변화시키기 위해", "③ 교류 전압의 변화를 안정화시키기 위해", "④ 교류 전압을 다른 교류 전압으로 변화시키기 위해"], 
+"answer": 0, 
+"explanation": ""},
+
+{"question": "12. 안전모의 등급표시 중 물체의 낙하에 의한 위험 방지와 머리 부위 감전에 의한 위험 방지 목적 으로 등급을 조합한 것으로 옳은 것은? ", 
+"choices": ["① A형", "②  AB형", "③ AE형", "④ BE형"], 
+"answer": 2, 
+"explanation": ""},
+
+{"question": "13. 다음 경고라벨에 대한 설명으로 거리가 먼 것은?<br><img src=\"images_from_pdf/2023_13.jpg\" width=\"400\">", 
+"choices": ["① 무대 기계장치를 유지보수한다.", "② 무대 기계장치를 일반적으로 기동한다.", "③ 조정실 랙에서 음향 앰프를 꺼내어 위치 이동한다.", "④ 무대 바닥이 미끄러워 넘어져 골절할 수 있는 상황이다."], 
+"answer": 3, 
+"explanation": ""},
+
+{"question": "14. 목재가공용 둥근톱의 방호장치로 옳은 것은?", 
+"choices": ["① 급정지장치", "② 전격방지장치", "③ 압력방출장치", "④ 날접촉예방장치"], 
+"answer": 3, 
+"explanation": ""},
+
+{"question": "15. 다음과 같은 경고라벨 사용 장소로 가장 가까운 것은?<br><img src=\"images_from_pdf/2023_15.jpg\" width=\"400\">", 
+"choices": ["① 지게차를 운영하는 공간이다.", "② 기계 절단 환경이므로 주의해야 한다.", "③ 개인 보호 장비를 착용해야 하는 공간이다.", "④ 인화성 물질이 있어 취급 주의가 필요하다."], 
+"answer": 2, 
+"explanation": ""},
+
+{"question": "16. 전기기기 등에 묻어 있는 습기, 수분, 먼지, 기타 오염물질이 부착된 표면을 따라서 전류가 흘 러 주변의 절연 물질을 탄화시키는 현상은?", 
+"choices": ["① 절전현상", "② 단락현상", "③ 지락현상", "④ 트래킹현상"], 
+"answer": 3, 
+"explanation": ""},
+
+{"question": "17. 습기가 있거나 물기가 많은 장소, 기름을 취급하는 장소에 가장 적합한 전선관은?", 
+"choices": ["① 금속덕트", "② 합성수지관", "③ 방수용 가요 전선관", "④ 염화비닐 코팅 금속관"], 
+"answer": 2, 
+"explanation": ""},
+
+{"question": "18. <보기>의 빈칸에 알맞은 법규는?<br><img src=\"images_from_pdf/2023_18.jpg\" width=\"400\">", 
+"choices": ["① 공연법", "② 문화예술법", "③ 공연예술진흥법", "④ 문화예술진흥법"], 
+"answer": 0, 
+"explanation": ""},
+
+{"question": "19. 산업안전보건법」에 따른 중대 재해에 대한 설명으로 옳지 않은 것은?", 
+"choices": ["① 사망자가 1명 이상 발생하는 경우 중대 재해에 해당한다.", "② 2개월의 요양이 필요한 부상자가 3명 발생하면 중대 재해에 포함된다.", "③ 부상자 또는 직업적 질병자가 동시에 10명 이상 발생한 재해에도 해당한다.", "④ 산업재해 중 사망 등 재해 정도가 심하거나 다수의 재해자가 발생한 경우로 고용노동부 령으로 정하는 재해를 말한다."], 
+"answer": 1, 
+"explanation": ""},
+
+{"question": "20. 2021년 1월 산업부가 공고한 한국전기설비규정(KEC : Korea Electro-technical Code)에서 적용하는 전압의 구분으로 옳지 않은 것은?", 
+"choices": ["① 저압 교류는 1,500 V 이하이다.", "② 저압 직류는 1,500 V 이하이다.", "③ 고압 직류는 7,000 V 이하이다.", "④ 특고압은 7,000 V를 초과하는 것이다."], 
+"answer": 0, 
+"explanation": ""},
+
+{"question": "21. 「소방시설 설치ㆍ유지 및 안전관리에 관한 법률」시행령에서 방염 대상에 해당하지 않는 것은?", 
+"choices": ["① 분장실의 옷장", "② 공연장 흡음 커튼", "③ 무대용 머리막과 다리막", "④ 합판으로 만든 무대장치"], 
+"answer": 0, 
+"explanation": ""},
+
+{"question": "22. 「공연법」 제11조(재해예방조치)와 관련하여 재해대처계획에 대한 설명으로 옳지 않은 것 은?", 
+"choices": ["① 등록된 모든 공연장은 공연장 규모와 관계없이 안전관리비를 계상하여야 한다.", "② 공연법  제11조에  따라  재해대처계획을  수립하는  공연장운영자  등은  대통령령으로 정하는 기준에 따라 안전관리 조직을 두어야 한다.", "③ 공연장운영자 및 공연장 외의 장소에서 공연을 하려는 자는 공연장 및 공연의 안전 관리에 필요한 비용을 대통령령으로 정하는 바에 따라 공연장운영 또는 공연비용에 계상하여야 한다.", "④ 공연법 제11조에 따라 재해대처계획을 수립하는 공연장운영자 등은 공연의 안전관 리를 위하여 공연에 참여하는 공연자, 안전총괄책임자, 안전관리담당자 등에게 안전 교육을 실시하여야 한다."], 
+"answer": 0, 
+"explanation": ""},
+
+{"question": "23. 다음 중 「공연법」에 따른 안전교육에 관한 사항으로 옳은 것은?", 
+"choices": ["① 안전총괄책임자는 2년마다 8시간 이상의 교육을 이수하여야 한다.", "② 안전관리담당자는 3년마다 8시간 이상의 교육을 이수하여야 한다.", "③ 안전총괄책임자와 안전관리담당자는 지정된 후 6개월 이내에 안전교육을 받아야 한다.", "④ 공연자는 공연이 시작되는 날을 기준으로 전후 각각 1주일 이내에 1시간 이상의 교육을 받아야 한다."], 
+"answer": 2, 
+"explanation": ""},
+
+{"question": "24. 국제단위계(SI : International System of Units)에 대한 설명으로 옳지 않은 것은?", 
+"choices": ["① 광도 : 칸델라(candela), 기호 : C", "② 길이 : 미터(meter), 기호 : 소문자 m", "③ 열역학적 온도 : 켈빈(kelvin), 기호 : K", "④ 질량 : 킬로그램(kilogram), 기호 : 소문자 kg"], 
+"answer": 0, 
+"explanation": ""},
+
+{"question": "25. <보기> 중 「공연법」에 따른 안전진단제도와 관련하여 옳은 것을 모두 고른 것은?<br><img src=\"images_from_pdf/2023_25.jpg\" width=\"400\">", 
+"choices": ["① ㉠, ㉡", "② ㉡, ㉣, ㉤", "③ ㉡, ㉢, ㉤", "④ ㉠, ㉡, ㉢, ㉣"], 
+"answer": 0, 
+"explanation": ""},
+
+
+{"question": "26. 「공연법」제12조(무대시설의 안전진단 등)에 대한 설명으로 옳지 않은 것은?", 
+"choices": ["① 설계검토는 대통령령으로 정하는 규모 이상의 공연장에 한정한다.", "② 정밀안전진단을 받은 날부터 3년이 경과한 경우 정기 안전검사를 받는다.", "③ 정기 안전검사와 정밀안전진단은 기간이 경과하기 전 30일 이내에 받는다.", "④ 정밀안전진단은 등록한 날부터 대통령령으로 정하는 기간이 경과한 경우 받는다."], 
+"answer": 2, 
+"explanation": ""},
+
+{"question": "27. 「공연법 시행령」 제9조(재해대처계획의 신고 등)에서 재해대처계획에 포함되어야 할 사 항이 아닌 것은?", 
+"choices": ["① 화재예방 및 인명피해 방지조치에 관한 사항", "② 비상시에 하여야 할 조치 및 연락처에 관한 사항", "③ 공연장 시설 등을 관리하는 자의 임무 및 관리 조직에 관한 사항", "④ 정기 안전검사, 자체 안전검사의 절차와 방법, 시기 등에 관하여 필요한 사항"], 
+"answer": 3, 
+"explanation": ""},
+
+{"question": "28. 「공연장 안전 및 관련법규」에서 안전 우선순위에 대한 설명으로 거리가 먼 것은?", 
+"choices": ["① 기구의 설치(공학적인 방법)가 훈련보다 효과적이다.", "② 훈련이 보호구의 착용보다 우선적인 위험 저감 방법이다.", "③ 공연장에서 개인 보호구의 착용은 안전 운선순위가 가장 낮다.", "④ 공연장에서 경고 표시가 가장 효과적인 안전 대책이 될 수 있다."], 
+"answer": 3, 
+"explanation": ""},
+
+{"question": "29. 검전기에 대한 설명으로 옳지 않은 것은?", 
+"choices": ["① 고압에는 사용하지 않는다.", "② 저압용에는 드라이버형과 펜슬형이 있다.", "③ 네온관의 방전에 따라 전압유무를 체크한다.", "④ 검전기 내부에는 고저항체가 있어 사용자의 인체를 보호하도록 설계되어 있다."], 
+"answer": 0, 
+"explanation": ""},
+
+{"question": "30. 경고라벨에 대한 설명으로 가장 거리가 먼 것은?", 
+"choices": ["① 국제적으로 ISO 3864에서 정하고 있다.", "② 쉽게 이해할 수 있도록 그림으로 표시한다.", "③ 응급 대책 등의 지시문은 생략하고 위험의 회피 방법을 기재한다.", "④ KSA 3501 등에서도 경고표시와 그림표시에 대하여 정의하고 있다."], 
+"answer": 2, 
+"explanation": ""},
+
+{"question": "31. 판소리에 대한 설명으로 옳지 않은 것은?", 
+"choices": ["① 소리꾼과 고수가 같이 엮어낸다.", "② 창, 아니리, 너름새를 섞어 이루어진다.", "③ 전통 판소리에서 장단은 장구로 연주되었다.", "④ 열두 마당 중 다섯 마당의 소리가 전해진다."], 
+"answer": 2, 
+"explanation": ""},
+
+{"question": "32. <보기>에서 설명하는 축제의 명칭으로 옳은 것은?<br><img src=\"images_from_pdf/2023_32.jpg\" width=\"400\">", 
+"choices": ["① 아비뇽 페스티벌(Avignon Festival)", "② 브레겐츠 페스티벌(Bregenz Festival)", "③ 에딘버러 페스티벌(Edinburgh Festival)", "④ 베로나 오페라 페스티벌(Verona Festival)"], 
+"answer": 0, 
+"explanation": ""},
+
+{"question": "33. <사진>의 뮤지컬 캣츠(Cats)의 작곡가는?", 
+"choices": ["① T. S. 엘리엇(T.S. Eliot)", "② 레너드 번스타인(Leonard Bernstein)", "③ 캐머런 매킨토시(Cameron Mackintosh)", "④ 앤드루 로이드 웨버(Andrew Lloyd Webber)"], 
+"answer": 3, 
+"explanation": ""},
+
+{"question": "34. 무대에서 배우의 얼굴은 볼 수 없으며 신체의 윤곽(silhouette)만 볼 수 있는 조명 효과로 옳은 것은?", 
+"choices": ["① 전광(front light)", "② 각광(foot light)", "③ 후광(back light)", "④ 두광(top light)"], 
+"answer": 2, 
+"explanation": ""},
+
+{"question": "35. <보기>의 설명에 해당하는 뮤지컬의 종류로 옳은 것은?<br><img src=\"images_from_pdf/2023_35.jpg\" width=\"400\">", 
+"choices": ["① 개념 뮤지컬(concept musical)", "② 뮤지컬 소극(musical farce)", "③ 풍자 뮤지컬(musical satire)", "④ 뮤지컬 코미디(musical comedy)"], 
+"answer": 1, 
+"explanation": ""},
+
+{"question": "36. <보기>의 설명에 해당하는 인물로 옳은 것은?<br><img src=\"images_from_pdf/2023_36.jpg\" width=\"400\">", 
+"choices": ["소포클레스(Sophocles)", "② 에우리피데스(Euripidēs) ", "③ 아이스킬로스(Aeschylos)", "④ 아리스토파네스(Aristophanes)"], 
+"answer": 0, 
+"explanation": ""},
+
+{"question": "37.  <그림>은 디오니소스 극장의 변천 과정 평면도이다. ‘ㄱ’의 명칭으로 옳은 것은? ", 
+"choices": ["① 제단(Altar)", "② 스케네(Skene)", "③ 테아트론(Theatron)", "④ 오케스트라(Orchestra)"], 
+"answer": 3, 
+"explanation": ""},
+
+{"question": "38. 고대 그리스 시대 극장의 특징으로 옳지 않은 것은?", 
+"choices": ["① 배경 건물인 스케네(Skene)로 배우들이 등퇴장했다.", "② 뜨거운 태양 때문에 야외보다는 실내 극장이 많이 지어졌다.", "③ 극장의 형태는 부채꼴 형태로 뒤로 가면서 높아지는 객석의 구조를 가지고 있다.", "④ 무대와 객석 사이로 관객이 들어오는 입구를 파로도스(Parodos)라 부르고 이는 일상에 서 극적 세계로 들어오는 상징적 역할을 한다."], 
+"answer": 1, 
+"explanation": ""},
+
+{"question": "39. <사진>의 올림픽 극장(Teatro Olimpico)에 대한 설명으로 옳지 않은 것은?<br><img src=\"images_from_pdf/2023_39.jpg\" width=\"400\">", 
+"choices": ["① 이탈리아 비첸자(Vicenza)에 세워졌다.", "② 1800년대에 유행했던 스타일로 실내 디자인되었다.", "③ 프로시니엄 아치의 유래가 되었다는 설이 유력하다.", "④ 비트루비우스(Vitruvius)의 건축술을 따른 건축이다."], 
+"answer": 1, 
+"explanation": ""},
+
+{"question": "40. 신고전주의 연극에 대한 설명으로 옳지 않은 것은?", 
+"choices": ["① 삼일치법을 엄격하게 지키며 대본을 썼다.", "② 르네상스 문화와 함께 꽃피우기 시작한 연극의 형식이다.", "③ 전형적인 캐릭터를 가지고 즉흥적으로 연기하는 방식이었다.", "④ 그리스 비극을 고전이라 칭하며 그 시대의 연극으로 돌아가려고 하였다."], 
+"answer": 2, 
+"explanation": ""},
+
+{"question": "41. 다음 중 막이 오르기 직전 상태의 모든 기술적 사항들을 준비하는 일을 표현하는 용어로 옳은 것은?", 
+"choices": ["① 프리뷰(preview)", "② 프리셋(preset)", "③ 바닥 표시(mark)", "④ 최종 연습(final dress rehearsal)"], 
+"answer": 1, 
+"explanation": ""},
+
+{"question": "42. <보기>에서 설명하는 시대로 옳은 것은?<br><img src=\"images_from_pdf/2023_42.jpg\" width=\"400\">", 
+"choices": ["① 고대 그리스 시대", "② 고대 로마 시대", "③ 중세 시대", "④ 르네상스 시대"], 
+"answer": 0, 
+"explanation": ""},
+
+{"question": "43. <보기>의 설명에 해당하는 극장으로 옳은 것은?<br><img src=\"images_from_pdf/2023_43.jpg\" width=\"400\">", 
+"choices": ["① 빈 국립 오페라 극장(Wien Staatsoper)", "② 뮌헨 국립극장(National Theater Munchen)", "③ 바이로이트 축제극장(Beyreuth Festspielhaus)", "④  잘츠부르크 축제극장(Salzburg Grosses Festspielhaus)"], 
+"answer": 2, 
+"explanation": ""},
+
+{"question": "44.  <보기>의 설명에 해당하는 작품으로 옳은 것은?<br><img src=\"images_from_pdf/2023_44.jpg\" width=\"400\">", 
+"choices": ["① 《브란》", "② 《페르귄트》", "③ 《민중의 적》", "④ 《사회의 기둥들》"], 
+"answer": 2, 
+"explanation": ""},
+
+{"question": "45.  아서 밀러(Arthur Miller)의 희곡 《모두가 나의 아들(All my sons)》의 역사적 배경이 되는 사 건으로 옳은 것은?", 
+"choices": ["① 미국의 경제 대공황", "② 미국의 원자폭탄 개발", "③ 미국의 매카시즘의 열풍", "④ 미국의 제2차 세계 대전 참전"], 
+"answer": 3, 
+"explanation": ""},
+
+
+{"question": "46.  <보기>에서 설명하는 사람으로 가장 옳은 것은?<br><img src=\"images_from_pdf/2023_46.jpg\" width=\"400\">", 
+"choices": ["① 연출", "② 무대 감독", "③ 기술 감독", "④ 무대 디자이너"], 
+"answer": 1, 
+"explanation": ""},
+
+
+{"question": "47.  다음 중 무대 제작소의 요건으로 거리가 먼 것은?", 
+"choices": ["① 제작소의 바닥은 여러 화학 재료에 강한 철재가 적합하다.", "② 제작 완료된 장치를 극장으로 옮기기 위해서 큰 반입구가 필요하다.", "③ 제작소가 극장과 같은 건물에 있을 때는 방음 장치에 대한 사전 고려를 해야 한다.", "④ 목공 작업을 하는 공간은 긴 목재나 합판을 재단하기에 충분히 넓은 공간이어야 한다."], 
+"answer": 0, 
+"explanation": ""},
+
+
+{"question": "48.  <사진>과 같은 무대 세트 제작 시 사용할 수 있는 재료로 가장 적절하지 않은 것은?<br><img src=\"images_from_pdf/2023_48.jpg\" width=\"400\">", 
+"choices": ["① 라텍스(latex cement)", "② 폴리아미드(polyamides)", "③ 폴리카보네이트(polycarbonate)", "④ 불포화 폴리에스터(unsaturated polyester)"], 
+"answer": 1, 
+"explanation": ""},
+
+
+{"question": "49.  무대 디자인 도면에 대한 설명으로 옳지 않은 것은?", 
+"choices": ["① 무대 단면도 - 무대 전환의 방법과 대기 위치, 등장 위치, 전환 속도, 특수한 요구사항 등을 상세하게 나타낸 도면.", "② 무대 평면도 - 무대 위에 설치된 상태의 무대 장치를 약 1.8m 높이에서 가상으로 자른 후 위에서 내려다본 모습을 축척에 맞게 그린 도면. ", "③ 전체 평면도 - 하나의 평면에 제작된 모든 장치물이 표시된 도면.", "④ 무대 제작 도면 - 장치의 제작 방법을 기술적으로 지시하는 도면으로 재료의 규격과 가 공 방법, 부재의 위치와 결합 방법, 철물의 규격과 위치 등이 표시된 도면."], 
+"answer": 0, 
+"explanation": ""},
+
+
+{"question": "50.  <그림>의 도면에 대한 설명으로 옳지 않은 것은?<br><img src=\"images_from_pdf/2023_50.jpg\" width=\"400\">", 
+"choices": ["① 침대가 있다.", "② 벽난로가 있다.", "③ 지하실로 내려가는 계단이 있다.", "④ 둥근 나무 기둥이 수직으로 서 있다."], 
+"answer": 3, 
+"explanation": ""},
+
+
+{"question": "51.  <보기>의 설명에 해당하는 관악기로 옳은 것은?<br><img src=\"images_from_pdf/2023_51.jpg\" width=\"400\">", 
+"choices": ["① 호른(horn)", "② 피콜로(piccolo)", "③ 코넷(cornet)", "④ 트롬본(trombone)"], 
+"answer": 2, 
+"explanation": ""},
+
+
+{"question": "52.  철재와 비교하였을 때 목재의 장점으로 옳지 않은 것은?", 
+"choices": ["① 적당한 강도로 처리 가공이 쉽다.", "② 못질이나 접착제에 의한 접착성이 좋다.", "③ 철재에 비해 가벼워 제작과 이동이 용이하다.", "④  흡습에 강하고 이것에 의한 변형이나 왜곡이 없다."], 
+"answer": 3, 
+"explanation": ""},
+
+
+{"question": "53.  다음 중 극장 설비의 명칭과 설명이 옳지 않은 것은?", 
+"choices": ["① 장치봉(batten) - 쇠파이프나 트러스를 사용하여 무대 장치나 조명 기구를 매다는 데 사 용한다.", "② 트랩(trap) - 주무대 바닥에 위치하는 공간으로 출연자나 장치가 아래로 사라지게 하는 용도로 쓰인다.", "③ 그리드 아이언(grid iron) - 무대 상부에 위치하며 무대 장치를 들어 올리는 데 필요한 무대 설비를 지지하는 용도로 쓰인다.", "④ 무대 웨건(wagon stage) - 연출상의 목적으로 무대 장치나 배우의 승강을 보여주며 덧 마루의 사용을 줄일 목적으로 사용된다."], 
+"answer": 2, 
+"explanation": ""},
+
+
+{"question": "54.  조명용어 'DMX512(digital multiplex 512)'의 설명으로 옳지 않은 것은?", 
+"choices": ["① OISTAT에서 표준화한 통신 규격이다.", "② 무대 조명 제어를 위한 표준 프로토콜이다.", "③ 단일 케이블을 통해 512개의 채널을 제어할 수 있다.", "④ 무빙 라이트의 빛의 밝기, 고보와 컬러 등을 바꿀 수 있다."], 
+"answer": 0, 
+"explanation": ""},
+
+
+{"question": "55. 다음 중 극장 하부 시설에 해당하는 것으로 옳은 것은?", 
+"choices": ["① 웨건(wagon)", "② 장치봉(batten)", "③ 머리막(border curtain)", "④ 그리드 아이언(grid iron)"], 
+"answer": 0, 
+"explanation": ""},
+
+
+{"question": "56.  세계의 주요 오페라 극장의 명칭과 특징을 설명한 것으로 옳지 않은 것은?", 
+"choices": ["① 스칼라 극장(Teatro alla Scala) - 이탈리아를 대표하는 오페라 극장으로 밀라노에 위치 하고 있다.", "② 메트로폴리탄 오페라 하우스(Metropolitan Opera House) - 뉴욕 맨하탄의 중심에 위치 하고 있으며 내부는 샤갈의 그림으로 장식되어 있다.", "③볼쇼이 극장(Bolshoi Theatre) - 1825년 모스크바에 문을 연 볼쇼이 극장은 페테르부르 크의 키로프 극장과 함께 유서 깊은 극장 중 하나이다. ", "④  왕립 오페라 극장 코벤트 가든(Royal Opera House / Covent Garden) - 원래는 궁정 국립극장이라는 이름으로 설립되었으며 현재 바이에른 주립 오페라 극단의 본거지이다."], 
+"answer": 3, 
+"explanation": ""},
+
+
+{"question": "57.  관객의 시각선을 기준으로 무대의 폭을 좌우로 조절하는 가림 장치는?", 
+"choices": ["① 다리막(leg)", "② 윗가림막(teaser)", "③ 작화막(back drop)", "④ 그랜드 드레이프(grand drape)"], 
+"answer": 0, 
+"explanation": ""},
+
+
+{"question": "58. <보기>의 설명에 해당하는 것으로 가장 적절한 것은?<br><img src=\"images_from_pdf/2023_58.jpg\" width=\"400\">", 
+"choices": ["① 페이징 시스템(paging system)", "② 인터컴 시스템(intercom system)", "③ 토크백 시스템(talkback system)", "④ 복합 효과 기기(multi effector processor)"], 
+"answer": 2, 
+"explanation": ""},
+
+
+{"question": "59.  <보기>에서 설명한 리허설의 명칭으로 옳은 것은? <br><img src=\"images_from_pdf/2023_59.jpg\" width=\"400\">", 
+"choices": ["① 런스루(Run Through)", "② 프레스 콜(Press Call)", "③ 드레스 리허설(Dress Rehearsal)", "④ 테크 리허설(Technical Reheasal)"], 
+"answer": 3, 
+"explanation": ""},
+
+
+{"question": "60.  재료 두 개를 접합할 때 사용하는 고정용 공구로 옳지 않은 것은?", 
+"choices": ["① <br><img src=\"images_from_pdf/2023_601.jpg\" width=\"200\">", "② <br><img src=\"images_from_pdf/2023_602.jpg\" width=\"200\">", "③ <br><img src=\"images_from_pdf/2023_603.jpg\" width=\"200\">", "④ <br><img src=\"images_from_pdf/2023_604.jpg\" width=\"200\">"], 
+"answer": 2, 
+"explanation": ""},
+
+
+
+
+];
+    const questionsMajor = [
+
+{"question": "1. <그림>에서 끌막의 모양으로 적절한 것을 고르시오.<br><img src=\"images_from_pdf/2023_s1.jpg\" width=\"400\">", 
+"choices": ["① ㉠", "② ㉡", "③ ㉢", "④ ㉣"], 
+"answer": 3, 
+"explanation": ""}, 
+
+{"question": "2. 와이어로프(wire rope)에 대한 설명 중 옳지 않은 것은?", 
+"choices": ["① 무대 기구를 승·하강하는 장치봉에 사용하는 와이어로프의 안전율은 6 이상을 확보해야 한다.", "② 가장 일반적인 와이어로프는 스트랜드(strand)를 심(core) 주위에 꼬아서 만든 스트랜디드 로프이다.", "③ 해수에서 사용 시 아연도금 와이어로프는 스테인리스 와이어로프에 비해 약 10배 정도 내식성 이 우수하다.", "④ 장치봉을 매다는 경우 와이어로프 간의 거리는 약 2.7m 정도로 하고 최대 3m를 넘지 않도록 한다."], 
+"answer": 2, 
+"explanation": ""}, 
+
+{"question": "3. <보기>와 같은 설명으로 옳은 것은?<br><img src=\"images_from_pdf/2023_s3.jpg\" width=\"400\">", 
+"choices": ["① 광전 감지기", "② 리드 스위치", "③ 근접 스위치", "④ 리미트 스위치"], 
+"answer": 2, 
+"explanation": ""}, 
+
+{"question": "4. <그림>은 PLC 제어시스템을 나타낸 것이다. 어떤 제어시스템인가?<br><img src=\"images_from_pdf/2023_s4.jpg\" width=\"400\">", 
+"choices": ["① 단독 제어시스템", "② 분산 제어시스템", "③ 집중 제어시스템", "④ 계층 제어시스템"], 
+"answer": 2, 
+"explanation": ""}, 
+
+{"question": "5. 공연장 무대 기계에서 사용되는 활차에 대한 설명으로 옳지 않은 것은?", 
+"choices": ["① 활차의 직경은 사용하고자 하는 와이어로프 공칭직경의 20배 이상으로 해야 한다.", "② 활차 설치 시 와이어로프와 활차의 와이어 홈이 이루는 인입 각도는 2도 이하로 한다.", "③ 메인 드럼의 직경은 사용하고자 하는 와이어로프 공칭직경의 30배 이상으로 해야 한다.", "④ 활차는 승·하강 시 마찰을 늘려주는 역할을 하며, 와이어로프의 방향은 바뀌지 않게 한다"], 
+"answer": 3, 
+"explanation": ""}, 
+
+{"question": "6. 장치봉에 7줄의 와이어로프가 <보기>와 같이 등간격으로 되어 있다. 장치봉 전체가 수평을 유 지하면서 고른 하중분포를 보일 때, ㉠∼㉣ 중에서 가장 큰 장력을 받는 부분은?<br><img src=\"images_from_pdf/2023_s6.jpg\" width=\"400\">", 
+"choices": ["① ㉠", "② ㉡", "③ ㉢", "④ ㉣"], 
+"answer": 1, 
+"explanation": ""}, 
+
+{"question": "7. <그림>은 무대장치 설치에 사용되는 매듭법이다. 다음 중 감은두매듭은?<br><img src=\"images_from_pdf/2023_s7.jpg\" width=\"400\">", 
+"choices": ["① ㉠", "② ㉡", "③ ㉢", "④ ㉣"], 
+"answer": 1, 
+"explanation": ""}, 
+
+{"question": "8. <보기>에서 ㉠, ㉡에 들어갈 내용으로 바르게 짝지어진 것은?<br><img src=\"images_from_pdf/2023_s8.jpg\" width=\"400\">", 
+"choices": ["① ㉠ : 파이텍스, ㉡ : 부직포", "② ㉠ : 리놀륨, ㉡ : 칩보드", "③ ㉠ : 댄스플로워, ㉡ : 캔버스", "④ ㉠ : 리놀륨, ㉡ : 부직포"], 
+"answer": 0, 
+"explanation": ""}, 
+
+{"question": "9. 나사 결합부에 진동하중이 작용하거나 하중에 변화가 있으면 어느 순간 나사는 풀리기 쉽다. 나사의 풀림 방지법으로 사용하지 않는 것은?", 
+"choices": ["① 접착제 사용", "② 멈춤 나사 사용", "③ 나비너트 사용", "④ 스프링와셔 사용"], 
+"answer": 2, 
+"explanation": ""}, 
+
+{"question": "10. 전동기 명판에 표시할 사항은 KS C 4202(저압 3상유도전동기)나 전동기에 관련된 KS규격에 명시되어 있다. 다음 중 명판에 표시할 항목으로 적절하지 않은 것은?", 
+"choices": ["① 전동기의 효율", "② 전동기의 정격출력", "③ 전동기의 부하연결 방식", "④ 전동기의 절연 등급"], 
+"answer": 2, 
+"explanation": ""}, 
+
+{"question": "11.  <보기>와 같은 특징이 있는 하부 승강무대 방식은?<br><img src=\"images_from_pdf/2023_s11.jpg\" width=\"400\">", 
+"choices": ["① 랙기어 방식", "② 볼스크루 방식", "③ 스크루잭 방식", "④ 스파이럴 리프트 방식"], 
+"answer": 3, 
+"explanation": ""}, 
+
+{"question": "12. 다음 중 PLC의 내부 구성으로 적절하지 않은 것을 고르시오.", 
+"choices": ["① 통신 회로부", "② 무정전전원장치(UPS)", "③ 중앙연산처리장치(CPU)", "④ 입출력 인터페이스 회로부"], 
+"answer": 1, 
+"explanation": ""}, 
+
+{"question": "13. 3상유도전동기의 회전 방향을 바꾸려면 어떻게 해야 하는가?", 
+"choices": ["① 전원의 극수를 바꾼다.", "② 기동 보상기를 이용한다.", "③ 전원의 주파수를 바꾼다.", "④ 전원 3선 중 2선의 상을 임의로 바꾼다."], 
+"answer": 3, 
+"explanation": ""}, 
+
+{"question": "14. 직경이 12mm인 와이어로프의 끝단을 클립으로 고정할 때 사용해야 할 클립의 개수(㉠)와 클립 간 최소 설치 간격(㉡)으로 옳은 것은?", 
+"choices": ["① ㉠ : 3개, ㉡ : 48mm", "② ㉠ : 3개, ㉡ : 72mm", "③ ㉠ : 4개, ㉡ : 48mm", "④ ㉠ : 4개, ㉡ : 72mm"], 
+"answer": 3, 
+"explanation": ""}, 
+
+{"question": "15. 뉴턴의 법칙(Newton’s law)을 설명한 것으로 틀린 것은?", 
+"choices": ["① 물체의 무게는 지구가 물체를 끌어당기는 힘과 같다.", "②  물체에 힘이 작용하면 물체는 그 힘에 비례한 가속도를 갖는다.", "③ 외부로부터 힘의 작용이 없으면 물체의 운동 상태는 변하지 않고 정지한 채로 있거나 등속운동을 계속한다.", "④ 두 물체가 서로에게 힘을 미치고 있을 때, 한쪽 물체가 받는 힘과 다른 쪽 물체가 받는 힘의 크기와 방향은 같다."], 
+"answer": 3, 
+"explanation": ""}, 
+
+{"question": "16. 공연장에서 사용하는 표준 덧마루를 서로 연결하기 위해 사용하는 철물로 적절한 것은?", 
+"choices": ["①  경첩", "② 꺾쇠", "③ 바닥쇠", "④ 누름쇠"], 
+"answer": 1, 
+"explanation": ""}, 
+
+{"question": "17. 계단의 일반적인 외관상 구조에 대한 설명으로 바르지 않은 것은?", 
+"choices": ["① 디딤판(tread) : 층계의 발판 부분", "② 챌판(riser) : 층계의 정면 수직 부분", "③ 계단 거리(run) : 디딤판 사이의 높이차", "④ 난간동자(baluster) : 난간 장치의 세로 부재 틀"], 
+"answer": 2, 
+"explanation": ""}, 
+
+{"question": "18. 건물의 구조물 또는 형강에 슬링을 연결하는 매듭(hitch) 방법으로 잘못된 것은?", 
+"choices": ["① 나비 매듭", "② 초커 매듭", "③ 바스켓 매듭", "④ 다중 감기 매듭"], 
+"answer": 0, 
+"explanation": ""}, 
+
+{"question": "19.  <그림>과 같이 R 1, R 2, R3 의 저항 3개를 직렬접속했을 때의 합성저항 값(R)은?<br><img src=\"images_from_pdf/2023_s19.jpg\" width=\"400\">", 
+"choices": ["① R = R 1 +  R 2 + R 3", "② R = R 1 ×  R 2 + R 3", "③ R = R 1 ×  R 2 × R 3", "④ R = R 1 +  R 2 × R 3"], 
+"answer": 0, 
+"explanation": ""}, 
+
+{"question": "20. 회전하는 축의 동력과 변위를 쉽게 전달할 수 있도록 작용력과 축의 무게를 지지하는 역할을 하는 기계요소 부품은 무엇인가?", 
+"choices": ["① 체인", "② 베어링", "③ 기어", "④ 커플링"], 
+"answer": 1, 
+"explanation": ""}, 
+
+{"question": "21. 전자력의 방향은 플레밍의 왼손법칙을 통해 알 수 있다. ㉠∼㉢은 어떤 방향을 나타낸 것인가?<br><img src=\"images_from_pdf/2023_s21.jpg\" width=\"400\">", 
+"choices": ["① ㉠ : 힘의 방향, ㉡ : 자기장의 방향, ㉢ : 전류의 방향", "② ㉠ : 전류의 방향, ㉡ : 힘의 방향, ㉢ : 자기장의 방향", "③ ㉠ : 기전력의 방향, ㉡ : 자속의 방향, ㉢ : 운동의 방향", "④ ㉠ : 운동의 방향, ㉡ : 기전력의 방향, ㉢ : 자속의 방향"], 
+"answer": 0, 
+"explanation": ""}, 
+
+{"question": "22. 공연장에서 망사막으로 사용할 수 있는 것만 나열한 것은?", 
+"choices": ["① 소창, 삭스투스, 스크림, 보비네트", "② 두브틴, 플러시, 우단, 면플란넬", "③ 코만도, 프록킹, 울서지, 우단", "④ 캔버스, 벨루어, 코만도, 광목"], 
+"answer": 0, 
+"explanation": ""}, 
+
+{"question": "23. 구조용 강의 인장 시험에서 인장력을 더 증가시키지 않아도 변형이 계속되는 현상을 재료의 무엇이라고 하는가?", 
+"choices": ["① 항복(yielding)", "② 네킹(necking)", "③ 극한강도(ultimate stress)", "④  변형경화(strain hardening)"], 
+"answer": 0, 
+"explanation": ""}, 
+
+{"question": "24. 다음 중 옴의 법칙(Ohm’s law)과 전압강하에 대한 설명으로 틀린 것은?", 
+"choices": ["① 전압은 전류의 크기와 도체의 저항에 비례한다.", "② 도체에 흐르는 전류의 크기를 나타내는 상수를 전기전도율이라고 한다.", "③ 전압강하는 저항에 전류가 흐를 때 저항 양단에 생기는 전위차를 말한다.", "④ 저항은 전기저항에서 도체가 전류를 잘 통하게 하는 정도로 정의한다."], 
+"answer": 3, 
+"explanation": ""}, 
+
+{"question": "25.  <그림>과 같은 천평판 장치를 구성하는 부품에 해당하지 않는 것은?<br><img src=\"images_from_pdf/2023_s25.jpg\" width=\"400\">", 
+"choices": ["① 살대(toggle)", "② 세로대(stile)", "③ 버팀대(stage brace)", "④ 이음판(keystone)"], 
+"answer": 2, 
+"explanation": ""}, 
+
+{"question": "26. <그림>은 무대 기계 구동부의 구조를 나타낸 것이다. 이 구조에서 알 수 없는 부품은?<br><img src=\"images_from_pdf/2023_s26.jpg\" width=\"400\">", 
+"choices": ["① 드럼", "② 감속기", "③ 턴버클", "④  전동기"], 
+"answer": 2, 
+"explanation": ""}, 
+
+{"question": "27. 릴레이 시퀀스 제어방식에서 2개 이상의 전자접촉기 또는 릴레이가 동시에 동작하지 않도록 하는 회로는? ", 
+"choices": ["① 인터록 회로", "② 비상정지 회로", "③ a, b 접점회로", "④ 자기유지회로"], 
+"answer": 0, 
+"explanation": ""}, 
+
+{"question": "28. 다음 회로는 정역 회로도를 나타낸 것이다. 설명으로 옳지 않은 것은?<br><img src=\"images_from_pdf/2023_s28.jpg\" width=\"400\">", 
+"choices": ["① 전자접촉기는 2개가 사용되었다.", "② 스위치는 모두 5개가 사용되었다.", "③ 전자접촉기의 a접점은 2개가 사용되었다.", "④ 전자접촉기의 b접점은 2개가 사용되었다."], 
+"answer": 1, 
+"explanation": ""}, 
+
+{"question": "29.  릴레이 시퀀스 회로 중 푸시버튼 스위치를 복귀시켜도 전자 코일이 자화를 유지하는 회로는?", 
+"choices": ["① 자기유지회로", "② a접점회로", "③ b접점회로", "④ 인터록 회로"], 
+"answer": 0, 
+"explanation": ""}, 
+
+{"question": "30. <그림>은 평면도에 사용하는 선의 종류이다. 이 기호의 설명으로 옳은 것은?<br><img src=\"images_from_pdf/2023_s30.jpg\" width=\"400\">", 
+"choices": ["① 바닥에 닿아 있는 주름 없는 막을 표현한 것이다.", "② 바닥에 닿아 있는 주름 있는 막을 표현한 것이다.", "③ 머리 위에 떠 있는 주름 없는 막을 표현한 것이다.", "④ 머리 위에 떠 있는 주름 있는 막을 표현한 것이다."], 
+"answer": 1, 
+"explanation": ""}, 
+
+{"question": "31. 다음은 무엇에 대한 설명인가?<br><img src=\"images_from_pdf/2023_s31.jpg\" width=\"400\">", 
+"choices": ["① 쿨롱의 법칙", "② 키르히호프의 제1법칙", "③ 키르히호프의 제2법칙", "④ 앙페르의 오른나사 법칙"], 
+"answer": 1, 
+"explanation": ""}, 
+
+{"question": "32. <그림>에 대한 설명으로 옳은 것은? <br><img src=\"images_from_pdf/2023_s32.jpg\" width=\"400\">", 
+"choices": ["① 평형추의 무게는 F이고, 장치봉의 행정거리는 평형추 행정거리의 1/2이다.", "② 평형추의 무게는 F이고, 장치봉의 행정거리는 평형추 행정거리와 동일하다.", "③ 평형추의 무게는 2F이고, 장치봉의 행정거리는 평형추 행정거리와 동일하다.", "④ 평형추의 무게는 2F이고, 장치봉의 행정거리는 평형추 행정거리의 2배이다."], 
+"answer": 3, 
+"explanation": ""}, 
+
+{"question": "33. 힘의 특성을 도식으로 나타내기 위하여 사용하는 것을 ‘벡터’라고 한다. 다음 중 벡터를 구성하는 요소로만 이루어진 것은?", 
+"choices": ["① 부피, 질량, 속력, 밀도", "② 부피, 질량, 속도, 가속도", "③ 힘, 모멘트, 시간, 속도", "④ 힘, 모멘트, 속도, 가속도"], 
+"answer": 3, 
+"explanation": ""}, 
+
+{"question": "34. <그림>에서 감속비가 1/20일 때 웜축(warm shaft)의 회전수는?<br><img src=\"images_from_pdf/2023_s1.jpg\" width=\"400\">", 
+"choices": ["① 60rpm", "② 150rpm", "③ 300rpm", "④ 600rpm"], 
+"answer": 3, 
+"explanation": ""}, 
+
+{"question": "35.  100V  전원에 연결되어 있는 전구에 2의 전류가 흐르고 있다. 전구의 사용 전력(W)은 얼마인가?", 
+"choices": ["① 200W", "② 150W", "③  100W", "④ 50W"], 
+"answer": 0, 
+"explanation": ""}, 
+
+{"question": "36. 회전무대는 무대의 장면전환을 원활하게 사용하기 위한 하부 무대 중 하나이다. 회전무대의 구동 방식으로 적절하지 않은 것은?", 
+"choices": ["① 기어 구동식 회전무대", "② 볼스크루 구동식 회전무대", "③ 마찰바퀴 구동식 회전무대", "④ 회전 바퀴 구동식 회전무대"], 
+"answer": 1, 
+"explanation": ""}, 
+
+{"question": "37. 전기회로에 전류가 2A이고 저항이 100Ω일 때, 회로에 흐르는 전압의 크기는?", 
+"choices": ["① 50V", "② 100V", "③ 200V", "④ 400V"], 
+"answer": 2, 
+"explanation": ""}, 
+
+{"question": "38. 장치봉이나 막기구의 설치를 위하여 사용하는 부속품으로 옳은 것은?<br><img src=\"images_from_pdf/2023_s38.jpg\" width=\"400\">", 
+"choices": ["① 클립(clip)", "② 섀클(shackle)", "③ 심블(thimble)", "④ 턴버클(tumbuckle)"], 
+"answer": 1, 
+"explanation": ""}, 
+
+{"question": "39. <그림>은 승강무대에 사용되는 구동 방식 중 하나이다. 이 방식의 특징으로 옳지 않은 것은?<br><img src=\"images_from_pdf/2023_s39.jpg\" width=\"400\">", 
+"choices": ["① 전동기와 축 연결을 통한 체인 구동 방식이다.", "② 랙과 피니언 기어의 조합으로 승·하강한다.", "③ 별도의 하부 격납 공간이 필요 없다.", "④ 원통 형태의 쉘(shell)을 이용하여 적층한다."], 
+"answer": 1, 
+"explanation": ""}, 
+
+{"question": "40. 공연장에서 사용하는 표준 덧마루와 받침통을 이용해서 만들 수 있는 높이가 아닌 것은?", 
+"choices": ["① 45cm", "② 60cm", "③ 70cm", "④ 90cm"], 
+"answer": 2, 
+"explanation": ""}, 
+
+];
+
+    let currentQuestions = [];
+    let currentIndex = 0;
+    let score = 0;
+    let answered = false;
+
+    function loadSection(section) {
+      currentQuestions = section === 'common' ? questionsCommon : questionsMajor;
+      currentIndex = 0;
+      score = 0;
+      loadQuestion();
+createNavButtons();  
+highlightCurrentButton();
+      document.getElementById('result').innerText = '';
+    }
+
+    function loadQuestion() {
+      const q = currentQuestions[currentIndex];
+      let html = `<h2>${q.question}</h2>`;
+      q.choices.forEach((choice, idx) => {
+        html += `<label><input type="radio" name="choice" value="${idx}"> ${choice}</label><br>`;
+      });
+      document.getElementById('quiz').innerHTML = html;
+      document.getElementById('nextBtn').style.display = 'none';
+      document.getElementById('result').innerText = '';
+      answered = false;
+highlightCurrentButton();
+
+    }
+
+    function submitAnswer() {
+      if (answered) return;
+      const selected = [...document.getElementsByName("choice")].find(r => r.checked);
+      if (!selected) {
+        alert("선택지를 고르세요!");
+        return;
+      }
+      const answer = parseInt(selected.value);
+      const correct = currentQuestions[currentIndex].answer;
+      const explanation = currentQuestions[currentIndex].explanation;
+      let resultText = "";
+
+      if (answer === correct) {
+        resultText = "정답입니다! 🎉";
+        score++;
+      } else {
+        resultText = `틀렸습니다. 정답은 ${correct + 1}번입니다.`;
+      }
+       resultText += "<br><em>해설: " + explanation.replace(/\n/g, "<br>") + "</em>";
+document.getElementById('result').innerHTML = resultText;
+document.getElementById('nextBtn').style.display = 'inline-block';
+answered = true;
+    }
+
+    function nextQuestion() {
+      currentIndex++;
+      if (currentIndex < currentQuestions.length) {
+        loadQuestion();
+      } else {
+        document.getElementById('quiz').innerHTML = "";
+        document.getElementById('nextBtn').style.display = "none";
+        document.getElementById('result').innerText = `총 ${currentQuestions.length}문제 중 ${score}개 맞췄습니다!`;
+      }
+    }
+function createNavButtons() {
+  const navDiv = document.getElementById("question-nav");
+  navDiv.innerHTML = "";
+  currentQuestions.forEach((_, idx) => {
+    const btn = document.createElement("button");
+    btn.innerText = idx + 1;
+    btn.style.margin = "2px";
+    btn.onclick = () => {
+      currentIndex = idx;
+      loadQuestion();
+      highlightCurrentButton();
+    };
+    btn.id = `nav-btn-${idx}`;
+    navDiv.appendChild(btn);
+  });
+}
+
+function highlightCurrentButton() {
+  currentQuestions.forEach((_, idx) => {
+    const btn = document.getElementById(`nav-btn-${idx}`);
+    if (btn) {
+      btn.style.backgroundColor = idx === currentIndex ? "#4CAF50" : "";
+      btn.style.color = idx === currentIndex ? "white" : "black";
+    }
+  });
+}
+
+
+    loadSection('common');
+  </script>
+</body>
+</html>
